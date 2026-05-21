@@ -1,4 +1,4 @@
-cask "claudebar" do
+cask "claudebar-menubar" do
   version "0.0.16"
   sha256 "5dade34a1db06ec934cca48b4964f3cd9419027648ed3a5d06a00d0d37828d25"
 
