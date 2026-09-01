@@ -13,21 +13,13 @@ cask "claudebar-menubar" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "ClaudeBar.app"
 
-  # App is signed with Apple Development certificate (not Developer ID +
-  # Notarization), so Gatekeeper would block first launch on a quarantined
-  # download. Strip the quarantine flag set by brew's download.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/ClaudeBar.app"]
-  end
-
   zap trash: [
     "~/Library/Application Support/ClaudeBar",
-    "~/Library/Preferences/com.claudebar.app.plist",
     "~/Library/Caches/com.claudebar.app",
+    "~/Library/Preferences/com.claudebar.app.plist",
   ]
 end
