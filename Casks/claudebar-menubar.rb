@@ -1,6 +1,6 @@
 cask "claudebar-menubar" do
-  version "0.0.33"
-  sha256 "b0c7dee15f75ecae9c02c1e32417100abc3f1b1ed4f4b673489618351e473547"
+  version "0.0.34"
+  sha256 "ef31344411867fa457aa78c2508442e4a4f0e4f21aeb9f7f6eb8b8bdd7fa1813"
 
   url "https://github.com/chiliec/ClaudeBar/releases/download/v#{version}/ClaudeBar.zip"
   name "ClaudeBar"
